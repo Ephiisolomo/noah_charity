@@ -1,5 +1,5 @@
 const app = require('./app');
-const dotenv = ('dotenv/config'); // This loads the .env file into process.env
+require('dotenv').config();
 const { createConnection } = require('typeorm');
 
 async function connectToDatabase() {
